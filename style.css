@@ -182,7 +182,8 @@ main>section .con-form{
         justify-content: center;
 }
 main>section .con-form input{
-    padding: 5px;
+    padding: 10px;
+    width: 300px;
     
 }
 main>section .con-form input:focus{
