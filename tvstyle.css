@@ -11,6 +11,7 @@ main>section.tvsection-main{
 main>section.tvsection-main h1{
     color: white;
     font-family: 'Ubuntu', sans-serif;
+    padding: 20px;
 
 }
 .ps{
