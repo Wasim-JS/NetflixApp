@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Kaushan+Script&family=Passion+One&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background-color: black;
+}
+
+
+header > img{
+    width: 119px;
+    height: 47px;
+    padding: 10px;
+}
+
+header >ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+header >ul>li>a{
+    color: white;
+  }
+header >ul>li{
+    position: relative;
+  }
+
+  header >ul>li::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    top: 110%;
+    left: 50%;
+    background-color: white;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s linear;
+  }
+  header >ul>li:hover::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    opacity: 1;
+    left: 0%;
+  }
+
+
+main > section.hero{
+    width: 100%;
+    height: 500px;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 1)),url("./spiderman.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* box-shadow: inset -10px -10px 10px black; */
+    position: relative;
+}
+
+main > section.hero .hero-info {
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+main > section.hero .hero-info div:nth-child(1){
+    font-family: 'Kaushan Script', cursive;
+    color: red;
+    text-shadow: white 10px 10px 10px;
+}
+main > section.hero .hero-info div:nth-child(2){
+    font-size: 20px;
+    width: 50%;
+}
+main > section.hero .hero-info div:nth-child(3){
+    font-size: 15px;
+    width: 50%;
+}
+
+main>section.mlist{
+    background-color: black;
+    color: white;
+}
+
+main>section.a{
+    background-image: linear-gradient(to top, rgba(0, 0, 0,0.1), rgba(0, 0, 0, 1)),linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),url("./hero.jpg");
+    background-size: cover;
+     background-position: right center;
+     
+
+
+}
+main>section.mlist>.temp{
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    padding: 30px;
+}
+main>section.mlist>.temp>.movie {
+    min-width: 300px;
+    min-height: 200px;
+    transition: all 0.3s linear;
+}
+.temp>.movie :hover {
+    transform: translateY(5px);
+}
+main>section.mlist>.temp>.movie img{
+
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.mlist h2{
+    padding: 20px 20px;
+}
+
+.mlist2{
+    background-image: url("./w2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    object-position: top top;
+    
+}
+
+main>section.contact{
+    width: 100%;
+    height: 500px;
+    background-color: green;
+    background-image: linear-gradient(to top, rgba(0, 0, 0,.1), rgba(0, 0, 0, 1)),linear-gradient(to bottom, rgba(0, 0, 0,0.1), rgba(0, 0, 0, 0.5)),url("./con1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main>section.contact .con-info{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+main>section.contact h1{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 50px;
+
+}
+main>section.contact p{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    
+
+}
+main>section .con-form{
+        display: flex;
+        justify-content: center;
+}
+main>section .con-form input{
+    padding: 5px;
+    
+}
+main>section .con-form input:focus{
+  outline: none;
+    
+}
+main>section .con-form button{
+    background-color: red;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    padding: 5px;
+    position: relative;
+    left: -2px;
+    
+}
+
+.footer{
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    background-image: url("/logo.png");
+    background-repeat: no-repeat;
+    background-size: 90px;
+}
+.footer .links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer .tmoves{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.footer a{
+    color: white;
+}
+.footer .finfo{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.footer .finfo select{
+    background-color: black;
+    color: white;
+ 
+}
+
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red;
+  }
+  
+  ::-webkit-scrollbar-thumb:horizontal{
+    background: red;
+    border-radius: 10px;
+    height: thin;
+}
+
+::-webkit-scrollbar:horizontal{
+    height: 5px;
+}
