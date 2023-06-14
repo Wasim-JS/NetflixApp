@@ -34,9 +34,10 @@ main>section.tvsection-main h1{
     width: 200px;
     height: 300px;
     object-fit: cover;
+    transition: transform 0.3s linear;
 }
 .tv-list div:hover {
-    transform: translateY(5px);
+    transform: translateY(-5px) scale(1.1);
 }
 
 .tv-list div img{
