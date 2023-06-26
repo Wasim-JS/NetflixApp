@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Kaushan+Script&family=Passion+One&family=Ubuntu&display=swap');
-
+@import url("/style.css");
 
 main>section.tvsection-main{
     width: 100%;
@@ -44,4 +44,22 @@ main>section.tvsection-main h1{
     width: 200px;
     height: 300px;
     object-fit: cover;
+}
+
+
+@media screen and (max-width:500px) {
+
+    .tv-list div img {
+       width: 280px;
+    }
+
+
+}
+
+@media screen and (max-width:300px) {
+
+    .tv-list div img {
+        width: 204px;
+    }
+
 }

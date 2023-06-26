@@ -7,6 +7,9 @@
 a{
     text-decoration: none;
 }
+html,body{
+    overflow-x: hidden;
+}
 
 header{
     display: flex;
@@ -31,6 +34,7 @@ header >ul{
   display: flex;
   gap: 20px;
   list-style: none;
+  transition: all 0.3s linear;
 }
 header >ul>li>a{
     color: white;
@@ -257,7 +261,19 @@ main>section .con-form button{
  
 }
 
+.icons{
+    display: none;
+}
 
+.icons .no-display{
+    display: none;
+}
+
+.active{
+    left: 0;
+    opacity:1;
+    position: fixed;
+}
 
 
 
@@ -286,4 +302,103 @@ main>section .con-form button{
 
 ::-webkit-scrollbar:horizontal{
     height: 5px;
+}
+
+@media screen and (max-width:1050px) {
+
+    main > section.hero .hero-info div:nth-child(2) {
+        width: 100%;
+    }
+
+    main > section.hero .hero-info div:nth-child(3) {
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-width:500px) {
+
+    header{
+        position: relative;
+        justify-content: space-between;
+        padding-right: 10px;
+    }
+
+    main > section.hero .hero-info {
+        top: 25%;
+    }
+
+
+    header ul{
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        opacity:0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+     header >.icons{
+        display: block;
+        z-index: 999;
+        color: white;
+    }
+
+    main > section.hero .hero-info div:nth-child(1) {
+        font-size: 40px;
+    }
+
+    main > section.hero .hero-info div:nth-child(2) {
+        width: 100%;
+    }
+
+    main > section.hero .hero-info div:nth-child(3) {
+        width: 100%;
+    }
+    .btns{
+        margin-top: -26px;;
+    }
+
+    main>section.contact h1 {
+        font-size: 26px;
+    }
+
+    main>section .con-form input {
+        width: 238px;
+    }
+
+    .footer {
+        height: auto;
+        padding: 30px;
+    }
+
+    .footer .links {
+     flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width:300px) {
+
+    main > section.hero .hero-info div:nth-child(2) {
+        font-size: 15px;
+    }
+
+    main > section.hero .hero-info div:nth-child(3) {
+        font-size: 10px;
+    }
+
+    main>section.mlist>.temp>.movie img {
+        width: 227px;
+    }
+
+    main>section .con-form input {
+        width: 177px;
+    }
 }
