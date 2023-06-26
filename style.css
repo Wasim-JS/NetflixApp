@@ -274,6 +274,12 @@ main>section .con-form button{
     opacity:1;
     position: fixed;
 }
+.headersactive{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
 
 
@@ -355,7 +361,7 @@ main>section .con-form button{
     }
 
     main > section.hero .hero-info div:nth-child(2) {
-        width: 100%;
+        width: 79%;
     }
 
     main > section.hero .hero-info div:nth-child(3) {
